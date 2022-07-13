@@ -1,0 +1,101 @@
+/*
+Author: Alexis Pearson
+Date: 7-10-2022
+
+Filename: styles,css
+*/
+
+.col1{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex: auto;
+  justify-content: space-between;
+}
+.col2{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex: auto;
+  justify-content: space-between;
+}
+.col3{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex: auto;
+  justify-content: space-between;
+}
+fieldset{
+  border: solid 1px black;
+  border-radius: 6px;
+  width: 48%;
+}
+legend{
+  font-size: 1.25em;
+  padding: 0 .25em;
+  color: grey;
+}
+label{
+  display: block;
+  padding: 10px;
+}
+p{
+  text-align: center;
+  padding: 80px 0px 0px 0px;
+}
+article{
+  text-align: left;
+  border: solid black;
+  border-radius: 6px;
+  width: 48%;
+}
+dl{
+  text-align: center;
+  border: solid black;
+  border-radius: 20px;
+  margin: 5px
+}
+footer>p{
+  padding: 0px;
+}
+li{
+  margin: 50px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid black;
+  list-style: none;
+  font-size: 24px
+}
+
+@media screen and (max-width: 568px ) {
+  .col1{
+    display: flex;
+    flex-direction: column;
+  }
+  .col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  fieldset{
+    width: 95%
+  }
+  article{
+    width: 100%;
+  }
+  ul{
+    display: flex;
+  flex-direction: column;
+  }
+  li{
+  margin: auto;
+  padding: 5px
+  }
+
+}
