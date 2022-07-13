@@ -4,98 +4,171 @@ Date: 7-10-2022
 
 Filename: styles,css
 */
+html {
+  background-color: indigo;
+}
 
-.col1{
+h2 {
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: purple;
+}
+
+.col1 {
   display: inline-flex;
   flex-direction: row-reverse;
   flex: auto;
   justify-content: space-between;
 }
-.col2{
+
+.col2 {
   display: inline-flex;
   flex-direction: row-reverse;
   flex: auto;
   justify-content: space-between;
 }
-.col3{
+
+.col3 {
   display: inline-flex;
   flex-direction: row-reverse;
   flex: auto;
   justify-content: space-between;
 }
-fieldset{
-  border: solid 1px black;
+
+fieldset {
+  border: solid 5px purple;
   border-radius: 6px;
   width: 48%;
+  background-color: lavender;
+  margin: 5px;
 }
-legend{
+
+legend {
   font-size: 1.25em;
   padding: 0 .25em;
-  color: grey;
+  color: white;
+  background-color: grey;
 }
-label{
+
+label {
   display: block;
   padding: 10px;
 }
-p{
+
+p {
   text-align: center;
   padding: 80px 0px 0px 0px;
 }
-article{
+
+article {
   text-align: left;
-  border: solid black;
+  border: solid 5px purple;
+  background-color: lavender;
   border-radius: 6px;
   width: 48%;
 }
-dl{
+
+dl {
   text-align: center;
-  border: solid black;
+  border: solid 5px white;
+  background-color: lavender;
   border-radius: 20px;
   margin: 5px
 }
-footer>p{
+
+footer {
+  color: white;
+  background-color: purple;
+  border: solid 2px white;
+  border-radius: 10px;
+  margin: 15px
+}
+
+a {
+  color: purple;
+}
+
+p>a {
+  color: white;
+  text-decoration: underline;
+  margin: 5px
+}
+
+footer>p {
   padding: 0px;
 }
-li{
+
+li {
   margin: 50px;
+  color: white;
 }
-ul{
+
+ul {
+  background-color: purple;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: solid black;
+  border: solid 5px white;
   list-style: none;
   font-size: 24px
 }
 
-@media screen and (max-width: 568px ) {
-  .col1{
+li :link {
+  color: white;
+  text-decoration: none;
+}
+
+li :visited {
+  color: white;
+  text-decoration: none;
+}
+
+li :hover {
+  text-decoration: underline;
+}
+
+h1 {
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 568px) {
+  .col1 {
     display: flex;
     flex-direction: column;
-  }
-  .col2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .col3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  fieldset{
-    width: 95%
-  }
-  article{
-    width: 100%;
-  }
-  ul{
-    display: flex;
-  flex-direction: column;
-  }
-  li{
-  margin: auto;
-  padding: 5px
   }
 
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  fieldset {
+    width: 95%
+  }
+
+  article {
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin: auto;
+    padding: 5px
+  }
 }
